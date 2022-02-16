@@ -1,0 +1,10 @@
+.container-fluid{
+    background: rgb(6, 137, 189);
+    width: 110vw;
+    display: flex;
+    flex: auto;
+    align-items: stretch;
+    align-items: baseline;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
