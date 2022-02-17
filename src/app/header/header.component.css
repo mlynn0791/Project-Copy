@@ -1,6 +1,6 @@
 .container-fluid {
   background: rgb(6, 137, 189);
-  width: 110vw;
+  width: 100vw;
   display: flex;
   justify-content: center;
   flex: auto;
