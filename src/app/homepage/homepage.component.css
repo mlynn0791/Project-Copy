@@ -12,3 +12,11 @@
  overflow: hidden;
  
 }
+
+.creator{
+  position: fixed;
+  font-family: 'Dancing Script', cursive;
+  position:fixed; bottom:0;
+  margin-left: 500px;
+  font-size:large;
+}
