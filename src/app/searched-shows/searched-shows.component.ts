@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ITvMaze } from '../itv-maze';
 
 @Component({
   selector: 'app-searched-shows',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchedShowsComponent implements OnInit {
 
-  constructor() { }
+  current: ITvMaze
+  constructor() {
+    this.current = {
+      title: 'Inventing Anna',
+      director:'Shonda Rhimes',
+      image: '',
+    }
+  }
+  
 
   ngOnInit(): void {
   }

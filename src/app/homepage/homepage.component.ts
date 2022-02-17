@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IHomePage } from '../ihome-page';
 
 @Component({
   selector: 'app-homepage',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor() { }
+  current: IHomePage
+  constructor() { 
+    this.current = {
+      title: 'Hello All',
+      cast: 'The Simpsons',
+      image: '',
+    }
+  }
 
   ngOnInit(): void {
   }
