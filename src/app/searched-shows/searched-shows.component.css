@@ -1,15 +1,1 @@
-.search {
-  float: right;
-  margin: 7px;
-}
 
-.search button {
-  background-color: #d5d900;
-  color: #f2f2f2;
-  float: right;
-  padding: 5px 10px;
-  margin-right: 16px;
-  font-size: 12px;
-  border: none;
-  cursor: pointer;
-}
