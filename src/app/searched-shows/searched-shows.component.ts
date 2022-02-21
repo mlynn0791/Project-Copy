@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ITvMaze } from '../itv-maze';
+import { ITvMaze } from '../isearched-shows';
 
 @Component({
   selector: 'app-searched-shows',
