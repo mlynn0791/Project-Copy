@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ITvMaze } from '../isearched-shows';
+import { TvService } from '../tv.service';
 
 @Component({
   selector: 'app-searched-shows',
@@ -9,16 +10,18 @@ import { ITvMaze } from '../isearched-shows';
 export class SearchedShowsComponent implements OnInit {
 
   current: ITvMaze
-  constructor() {
+  constructor(private tvService: TvService) {
     this.current = {
-      title: 'Inventing Anna',
-      director:'Shonda Rhimes',
-      image: '',
+      name: '',
+      summary: '',
     }
   }
   
 
   ngOnInit(): void {
+    this.tvService.getSearchedShows('Girls').
+    subscribe(data => this.current = data)
+
   }
 
-}
+} 
