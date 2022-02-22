@@ -1,17 +1,20 @@
 <!-- search bar right align -->
-
 <div class="container-fluid">
   <h1>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <i class="fa fa-spinner fa-spin"></i>
-
-    <span>ShowFlix&copy;</span>
+    <!-- <i class="fa fa-spinner fa-spin"></i> -->
+    <mat-icon aria-hidden="false" >home</mat-icon>
+    <mat-toolbar-row>
+     <span>ShowFlix&copy;</span>
+    
+      </mat-toolbar-row>
     <form id="form">
       <input type="search" id="query" name="q" placeholder="Search..." />
       <button>Search</button>
     </form>
   </h1>
 </div>
+
