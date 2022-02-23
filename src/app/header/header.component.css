@@ -1,4 +1,4 @@
-.container-fluid {
+/* .container-fluid {
   background: rgb(6, 137, 189);
   width: 100vw;
   display: flex;
@@ -10,5 +10,16 @@
   margin-right: -20px;
   margin-bottom: 20px;
   margin-top: 0px;
- }
+ } */
 
+ .toolbar{
+  height:100px;
+  background-color: blueviolet;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 0px auto;
+      display: block;
+      font-size: 28px;
+  }
