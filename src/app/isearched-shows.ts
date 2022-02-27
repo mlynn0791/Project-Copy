@@ -1,4 +1,10 @@
-export interface ITvMaze {
+export interface Isearchedshows {
     name: string,
-    summary: string
+    language: string,
+    genres: [],
+    rating: number,
+    image: string,
+    summary: string,
+    network: string,
+    schedule: string,
 }

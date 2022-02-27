@@ -1,5 +1,20 @@
 export interface ITvAppData {
-    name: string,
-
-    summary: string 
+    show:{
+        name:string,
+    language: string,
+    genres: [],
+    rating:{
+     average: number
+    } ,
+    image: {
+        medium: string | any
+    },
+    summary: string,
+    network: {
+        name:string
+    },
+    schedule: {
+     time: string,
+     days: string,
 }
+}}

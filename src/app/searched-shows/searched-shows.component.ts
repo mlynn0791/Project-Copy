@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ITvMaze } from '../isearched-shows';
+import { Component, Input, OnInit } from '@angular/core';
+import { Isearchedshows } from '../isearched-shows';
 import { TvService } from '../tv.service';
 
 @Component({
@@ -9,18 +9,25 @@ import { TvService } from '../tv.service';
 })
 export class SearchedShowsComponent implements OnInit {
 
-  current: ITvMaze
+  @Input() shows: Isearchedshows[]
   constructor(private tvService: TvService) {
-    this.current = {
-      name: '',
-      summary: '',
-    }
-  }
   
+    this.shows = [{
+      name: '',
+      language: '',
+      genres: [],
+      rating: 0,
+      image: '',
+      summary: '',
+      network: '',
+      schedule: '',
+    }]
+  }
+ 
 
   ngOnInit(): void {
-    this.tvService.getSearchedShows('Girls').
-    subscribe(data => this.current = data)
+    this.tvService.getShows('Girls').
+    subscribe(data => this.shows = data)
 
   }
 
